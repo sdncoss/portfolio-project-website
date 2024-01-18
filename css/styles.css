@@ -1,0 +1,233 @@
+/*
+Colors Used
+text = #
+primary = #E3A6AE
+secondary = #B7C8CB
+tertiary = #EECECE
+alt = #dadbd3
+*/
+:root {
+  --primary-color: #E3A6AE;
+  --secondary-color: #B7C8CB;
+  --tertiary-color: #F7F7F7;
+  --alt-color: #DADBD3;
+  --white-color: white;
+  --font-weight: 700;
+  --text-decoration: none;
+}
+
+body {
+    background-color: var(--tertiary-color);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    }
+
+h1 {
+    font-size: 30px;
+    font-weight: var(--font-weight);
+    font-family: 'Sacramento', sans-serif;
+  }
+  
+h2 {
+    font-size: 24px;
+    font-weight: var(--font-weight);
+  }
+  
+h3 {
+    font-size: 18px;
+    font-weight: var(--font-weight);
+  }
+.profile_portrait {
+    margin: 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: var(--text-decoration);
+  }
+
+a:visited {
+    color: var(--secondary-color);
+  }
+
+a:hover, a:focus {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  } 
+
+a:active {
+    color: #000;
+    text-decoration: var(--text-decoration);
+  }
+
+button, .button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    text-decoration: var(--text-decoration);
+    font-family: inherit;
+    color: var(--white-color);
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s;
+  }
+
+button:visited {
+    background-color: var(--secondary-color);
+    }
+
+button:hover, button:focus, .button:hover, .button:focus {
+    color: var(--white-color);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+button:active, .button:active {
+    background-color: #000;
+  }
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    text-decoration: var(--text-decoration);
+    font-family: inherit;
+    color: var(--white-color);
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.about-page {
+    text-align: center;
+}
+.work-page {
+    text-align: center;
+}
+.contact-page {
+    text-align: center;
+}
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.profile_portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+.page-header__item {
+    flex: 0 1 40px;
+  }
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+.navigation-list {
+    list-style-type: none;
+  }
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    transition: transform 0.5s ease;
+  }
+.grid__item {
+    background-color: var(--white-color);
+    padding: 5px 10px;
+  }
+.grid__item:hover {
+    transform: scale(1.05);
+}
+* {
+    box-sizing: border-box;
+  }
+svg * {
+    transform-box: fill-box;
+}
+  /* animations */
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+  
+@keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+.cloud-back {
+    animation: 35s cloud-move-reverse infinite alternate linear;
+}
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+/* media quiries for responsive screen sizes */
+  @media all and (max-width: 500px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .project-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .project-grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
