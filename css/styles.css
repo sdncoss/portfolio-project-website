@@ -1,16 +1,16 @@
 /*
 Colors Used
 text = #
-primary = #E3A6AE
-secondary = #B7C8CB
-tertiary = #EECECE
+primary = #FDC2B1
+secondary = #93c3cd
+tertiary = #Fcfdf4
 alt = #dadbd3
 */
 :root {
-  --primary-color: #E3A6AE;
-  --secondary-color: #B7C8CB;
-  --tertiary-color: #F7F7F7;
-  --alt-color: #DADBD3;
+  --primary-color: #FDC2B1;
+  --secondary-color: #415380;
+  --tertiary-color: #Fcfdf4;
+  --alt-color: #e8ddcf;
   --white-color: white;
   --font-weight: 700;
   --text-decoration: none;
@@ -27,7 +27,7 @@ body {
 h1 {
     font-size: 60px;
     font-weight: var(--font-weight);
-    font-family: 'Sacramento', sans-serif;
+    font-family: 'Playwrite DE Grund', sans-serif;
   }
   
 h2 {
@@ -90,6 +90,8 @@ button:active, .button:active {
     background-color: #000;
   }
 
+
+
 input[type="submit"] {
     background-color: var(--primary-color);
     font-size: 16px;
@@ -98,7 +100,7 @@ input[type="submit"] {
     color: var(--white-color);
     padding: 10px 12px;
     margin: 5px;
-    border-radius: 12px;
+    border-radius: 40px 10px;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     }
@@ -129,6 +131,12 @@ input[type="submit"]:hover {
 }
 .contact-page {
     text-align: center;
+}
+
+.meetApp-page, .myFlixApp-page {
+  text-align: center;
+  padding: 5px 10px; 
+  margin: 10px;
 }
 .page-footer {
     clear: both;
