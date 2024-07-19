@@ -9,7 +9,7 @@ alt = #dadbd3
 :root {
   --primary-color: #FDC2B1;
   --secondary-color: #415380;
-  --tertiary-color: #Fcfdf4;
+  --tertiary-color: #93c3cd;
   --alt-color: #e8ddcf;
   --white-color: white;
   --font-weight: 700;
@@ -44,7 +44,7 @@ h3 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: var(--text-decoration);
   }
 
@@ -135,7 +135,22 @@ input[type="submit"]:hover {
 
 .meetApp-page, .myFlixApp-page {
   text-align: center;
-  padding: 5px 10px; 
+  padding: 5px 30px; 
+  margin: 10px;
+}
+
+.movie-app {
+  width: 190px;
+  padding: 5px;
+}
+.movie-app-pf {
+  width:150px;
+  float: left;
+  margin: 20px;
+}
+
+.work-links{
+  width: 20px;
   margin: 10px;
 }
 .page-footer {
