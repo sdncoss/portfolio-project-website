@@ -154,6 +154,14 @@ margin: 10px;
 border-radius: 50px; 
 }
 
+.home-page {
+  text-align: center;
+}
+
+.cartoon-portrait {
+  height: 200px;
+}
+
 .about-page {
   text-align: center;
   padding: 5px 50px; 
