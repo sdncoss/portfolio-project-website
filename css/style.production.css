@@ -192,6 +192,10 @@ border-radius: 50px;
   margin: 10px;
 }
 
+.work-img {
+  width: 200px;
+}
+
 .page-footer {
   clear: both;
   display: -webkit-box;
