@@ -194,6 +194,20 @@ border-radius: 50px;
   float: left;
   margin: 20px;
 }
+.meet-app {
+  width: 500px;
+  padding: 5px;
+}
+
+.meet-app-search {
+  width:200px;
+  float: left;
+  margin: 20px;
+}
+.meet-app-error {
+  width: 200px;
+  margin: 10px;
+}
 
 .work-links{
   width: 20px;
