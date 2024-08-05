@@ -208,6 +208,20 @@ border-radius: 50px;
   width: 200px;
   margin: 10px;
 }
+.chat-app1 {
+  width:200px;
+  float: left;
+  margin: 20px;
+}
+.chat-app2 {
+  width:200px;
+  float: right;
+  margin: 20px;
+}
+.chat-app {
+  width: 500px;
+  padding: 5px;
+}
 
 .work-links{
   width: 20px;
