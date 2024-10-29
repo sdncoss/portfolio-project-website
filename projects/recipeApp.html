@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work</title>
+  <link rel="shortcut icon" href="../img/simple-cartoon-girl-with-pink-glasses--blue-eyes--.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <!--logo-->
+    <a href="../index.html">
+    <img src="../img/simple-cartoon-girl-with-pink-glasses--blue-eyes--.png" class="page-header__logo"
+      alt="logo of a girl on the computer">
+      </a>
+    <!--navigation menu-->
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="../index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="../about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="../contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="../work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <section class="myFlixApp-page">
+      <h1>Stir Crazy App</h1>
+      <a href="https://github.com/sdncoss/recipe-app" target="blank"><img class="work-links" src="../svg/codebutton.svg"
+          alt="code icon"></a>
+      <a href="https://movieflixappforyou.netlify.app/" target="blank"><img class="work-links"
+          src="../svg/linkbutton.svg" alt="link icon"></a>
+      <h3>Django | SQLite Database | HTML | CSS | Bootstrap | Pandas</h3>
+      <p class="myflix-text">This project, "Stir Crazy," is a Django-powered web application designed 
+        to allow users to explore, add, and search through a wide array of recipes. Users can browse 
+        detailed recipe information, contribute their own recipes, and search based on specific criteria, 
+        creating a dynamic and interactive experience for home cooks. The choice of Django for the 
+        backend, combined with Bootstrap and custom CSS for styling, facilitated a responsive, database-driven 
+        interface that is both functional and visually appealing.
+      </p>
+      <img src="../img/recipeApp1.png" alt="app login view" class="movie-app">
+      <h2>The Problem</h2>
+      <p>The main objective was to create a user-friendly, maintainable recipe application where users can:
+      <ul>The aims were to:
+        <li>Search recipes by category, cooking time, and ingredients.</li>
+        <li>Contribute new recipes, accessible via a dedicated form.</li>
+        <li>View detailed information about each recipe in a seamless browsing experience.</li>
+      </ul>
+      </p>
+      <h2>Tech Stack Explained</h2>
+      <p>"Stir Crazy" is a web application built with Django, leveraging its built-in ORM and templating system. 
+        SQLite serves as the database, chosen for its simplicity and integration with Django's development setup, 
+        enabling quick prototyping and deployment. Bootstrap and custom CSS styles were used for the front end, 
+        providing responsive design elements and a cohesive, visually appealing layout. Additionally, Pandas is 
+        used in the backend to structure and manipulate recipe data before displaying search results, allowing 
+        complex filtering and data handling capabilities.</p>
+      <img src="../img/recipeApp2.png" alt="app movie view" class="movie-app">
+      <img src="../img/recipeApp3.png" alt="app movie view" class="movie-app">
+      <img src="../img/recipeApp4.png" alt="app movie view" class="movie-app">
+      <h2>Lessons Learned</h2>
+      <h4>Core Components and Features:</h4>
+      <ul>
+        <li>Goal: Developed recipe app with a search functionality, authenticated "Add Recipe", and create a paginated recipe list for a smooth browsing experience.</li>
+        <li>Skills and Tools: Django, SQLite, Bootstrap, Pandas, HTML, CSS</li>
+        <li>What went well: Successfully implemented form handling and user authentication with Django's built-in features.</li>
+        <li>What didn’t go well: Initial challenges with styling the search result tables and dynamically handling search filters required several iterations for optimization.</li>
+        <li>Challenges: Ensuring data consistency and compatibility in the SQLite database when handling dynamic user inputs.</li>
+        <li>Decisions: Used Pandas for data manipulation to enable flexible and efficient filtering of recipe information in real-time.</li>
+      </ul>
+      </p>
+  </body>
+
+</html>
